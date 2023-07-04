@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CafeManagement.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CafeManagement"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar x:Name="MyTabBar">
+        <Tab Icon="profile.png">
+            <ShellContent ContentTemplate="{DataTemplate local:ProfilePage}"
+                          Route="ProfilePage"/>
+
+        </Tab>
+        <Tab Icon="current_event.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MenuPage}"
+                          Route="Menu"
+                          Title="Menu"/>
+            <ShellContent ContentTemplate="{DataTemplate local:OrdersPage}"
+                          Route="Orders"
+                          Title="Orders"/>
+            <ShellContent ContentTemplate="{DataTemplate local:RolesPage}"
+                          Route="Roles"
+                          Title="Roles"/>
+            <ShellContent ContentTemplate="{DataTemplate local:LifecyclePage}"
+                          Route="Lifecycle"
+                          Title="Start/End"/>
+        </Tab>
+        <Tab Icon="schedule.png">
+            <ShellContent ContentTemplate="{DataTemplate local:SchedulePage}"
+                          Route="SchedulePage"/>
+        </Tab>
+        <Tab Icon="forum.png">
+            <ShellContent ContentTemplate="{DataTemplate local:ForumPage}"
+                          Route="ForumPage"/>
+
+        </Tab>
+        <Tab Icon="archive.png">
+            <ShellContent ContentTemplate="{DataTemplate local:ArchivePage}"
+                          Route="ArchivePage"/>
+
+        </Tab>
+    </TabBar>
+
+</Shell>
+
