@@ -1,4 +1,5 @@
-﻿namespace CafeManagement;
+﻿using CafeManagement.View;
+namespace CafeManagement;
 
 public partial class AppShell : Shell
 {
@@ -14,6 +15,7 @@ public partial class AppShell : Shell
 		Routing.RegisterRoute(nameof(ForumPage), typeof(ForumPage));
 		Routing.RegisterRoute(nameof(ProfilePage), typeof(ProfilePage));
 		Routing.RegisterRoute(nameof(SchedulePage), typeof(SchedulePage));
+		Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
 	}
 }
 

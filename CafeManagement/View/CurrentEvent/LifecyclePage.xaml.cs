@@ -1,6 +1,6 @@
 ﻿using CafeManagement.ViewModel;
 
-namespace CafeManagement;
+namespace CafeManagement.View;
 
 public partial class LifecyclePage : ContentPage
 {

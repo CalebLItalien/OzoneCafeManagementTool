@@ -1,4 +1,5 @@
 ﻿using CafeManagement.ViewModel;
+using CafeManagement.View;
 using Microsoft.Extensions.Logging;
 
 namespace CafeManagement;
@@ -47,6 +48,10 @@ public static class MauiProgram
 		builder.Services.AddTransient<LifecyclePage>();
 		builder.Services.AddTransient<LifecycleViewModel>();
 		//---------------------\\
+
+		//--- LOGIN ---\\
+		builder.Services.AddTransient<LoginPage>();
+
 
 #if DEBUG
         builder.Logging.AddDebug();

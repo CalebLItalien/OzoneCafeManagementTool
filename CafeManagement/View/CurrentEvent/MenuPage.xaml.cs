@@ -1,12 +1,12 @@
 ﻿using CafeManagement.ViewModel;
 
-namespace CafeManagement;
+namespace CafeManagement.View;
 
 public partial class MenuPage : ContentPage
 {
 	public MenuPage(MenuViewModel vm)
 	{
-		InitializeComponent();
+        InitializeComponent();
 		BindingContext = vm;
 	}
 }

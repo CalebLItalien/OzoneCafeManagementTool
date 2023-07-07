@@ -81,6 +81,8 @@
 	  <None Remove="ViewModel\ForumModel\" />
 	  <None Remove="ViewModel\ProfileModel\" />
 	  <None Remove="ViewModel\ScheduleModel\" />
+	  <None Remove="View\Login\" />
+	  <None Remove="ViewModel\LoginModel\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Images\ozonelogo.jpeg" />
@@ -106,5 +108,7 @@
 	  <Folder Include="ViewModel\ForumModel\" />
 	  <Folder Include="ViewModel\ProfileModel\" />
 	  <Folder Include="ViewModel\ScheduleModel\" />
+	  <Folder Include="View\Login\" />
+	  <Folder Include="ViewModel\LoginModel\" />
 	</ItemGroup>
 </Project>
